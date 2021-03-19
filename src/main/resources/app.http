@@ -1,0 +1,32 @@
+@host = http://localhost:8080/employees
+@host2 = http://localhost:8080/orders
+# GET {{host2}} HTTP/1.1
+
+#add a record
+# POST {{host}} HTTP/1.1
+# Content-type: application/json
+
+# {
+#     "firstName" : "Bayer", 
+#     "lastName" : "Frodo", 
+#     "role" : "IT" 
+# }
+
+# #update all fields of a record
+# PUT {{host}}/1 HTTP/1.1
+# Content-type: application/json
+
+# {
+#     "name":"Freddy kkelvin",
+#     "role" : "Beggins"
+# }
+
+
+# complete a specific order
+# PUT {{host2}}/4/complete HTTP/1.1
+
+
+
+
+#delete a record ie id=4
+DELETE {{host2}}/4/cancel HTTP/1.1
